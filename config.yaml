@@ -1,0 +1,27 @@
+data:
+  train_path: "data/train.csv"
+  test_path: "data/test.csv"
+  
+feature_engineering:
+  create_new_features: true
+  scaler: "standard"
+  handle_outliers: true
+  log_transform_target: true
+  
+models:
+  use_models: ["xgboost", "ridge", "lasso", "random_forest"]
+  cv_folds: 5
+  random_state: 42
+  
+xgboost_params:
+  n_estimators: 1000
+  learning_rate: 0.01
+  max_depth: 4
+  subsample: 0.8
+  colsample_bytree: 0.8
+  reg_alpha: 0.1
+  reg_lambda: 1.0
+  
+submission:
+  output_dir: "submissions"
+  version_prefix: "v"
