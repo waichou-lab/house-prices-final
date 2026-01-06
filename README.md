@@ -701,7 +701,7 @@ predictions = np.clip(predictions, q1 * 0.8, q99 * 1.2)
 
 ## **附錄：代碼實現**
 
-完整代碼可訪問：https://github.com/your-username/house-price-prediction
+完整代碼可訪問：https://github.com/waichou-lab/house-prices-final
 
 ### **主要模塊**
 1. `data_loader.py`：數據加載與預處理
