@@ -730,3 +730,4 @@ python predict.py
 ---
 
 ## **附錄：kaggle截圖**
+[!image][The photo in kaggle.png]
